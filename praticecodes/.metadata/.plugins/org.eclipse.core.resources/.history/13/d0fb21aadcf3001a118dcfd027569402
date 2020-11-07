@@ -1,0 +1,13 @@
+package com.thread.test;
+
+public class Program 
+{
+
+	public static void main(String[] args) 
+	{
+		Thread thread=Thread.currentThread();
+		System.out.println(thread.toString());
+
+	}
+
+}

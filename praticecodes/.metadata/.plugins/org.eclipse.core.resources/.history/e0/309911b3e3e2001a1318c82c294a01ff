@@ -1,0 +1,120 @@
+package com.sunbeam.test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+class ListTest
+{
+	private List<Employee>list;
+	public void setList(List<Employee> list)
+	{
+		this.list = list;
+	}
+	public void addEmployee(Employee[] emp) 
+	{
+		if(emp!=null && list!=null)
+		{
+			for(Employee employee : emp)
+			{
+				list.add(employee);
+			}
+		}
+		
+	}
+	public void printEmployee()
+	{
+		if(list!=null)
+		{
+			Collections.sort(list);
+			for (Employee employee : list) 
+			{
+				
+				System.out.println(employee.toString());
+				
+			}
+		}
+		
+	}
+	
+}
+public class Program 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static Employee[] getEmployees()
+	{
+		Employee[]arr=new Employee[5];
+		
+		arr[0]=new Employee("manisha",13,1100);
+		arr[1]=new Employee("nisha",12,1200);
+		arr[2]=new Employee("raj",10,1300);
+		arr[3]=new Employee("jenny",14,1400);
+		arr[4]=new Employee("jay",22,1500);
+		return arr;
+	}
+	private static void printEmployees(Employee[] emp)
+	{
+		if(emp!=null)
+		{
+			for (Employee employee : emp) 
+			{
+				System.out.println(employee.toString());
+			}
+		}
+		
+	}
+
+	static int menuList()
+	{
+		System.out.println("0.exit");
+		System.out.println("1.add record");
+		System.out.println("2.find record ");
+		System.out.println("3.delete record");
+		System.out.println("4.print Record");
+		return sc.nextInt();
+	}
+	public static void main(String[] args) 
+	{
+		int choice;
+		Employee[]emp=Program.getEmployees();
+		
+		//Program.printEmployees(emp);
+		
+		ListTest test=new ListTest();
+		test.setList(new ArrayList<Employee>());
+		test.addEmployee(emp);
+		test.printEmployee();
+		
+		while((choice=Program.menuList())!=0)
+		{
+			switch (key) 
+			{
+			case 1:
+				
+				break;
+			case 2:
+				
+				break;
+			case 3:
+	
+				break;
+			case 4:
+	
+				break;
+
+			}
+		}
+		
+		
+		
+		
+	
+		
+		
+		
+
+	}
+	
+}

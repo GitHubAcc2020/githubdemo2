@@ -1,0 +1,36 @@
+package com.sunbeam.test;
+
+import java.util.Arrays;
+
+public class Program 
+{
+
+	public static Employee[] getEmployees()
+	{
+		Employee[]arr=new Employee[5];
+		
+		arr[0]=new Employee("manisha",11,1100);
+		arr[1]=new Employee("nisha",12,1200);
+		arr[2]=new Employee("raj",13,1300);
+		arr[3]=new Employee("jenny",14,1400);
+		arr[4]=new Employee("jay",15,1500);
+		return arr;
+	}
+	public static void main(String[] args) 
+	{
+		Employee[]emp=Program.getEmployees();
+		
+		for (Employee employee : emp) 
+		{
+			System.out.println(emp.toString());
+		}
+		
+		
+	
+		
+		
+		
+
+	}
+
+}

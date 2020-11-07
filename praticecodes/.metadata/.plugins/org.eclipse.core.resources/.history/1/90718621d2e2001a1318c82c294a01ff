@@ -1,0 +1,21 @@
+package com.sunbeam.test;
+
+import java.util.Arrays;
+
+public class Program {
+
+	public static void main(String[] args) 
+	{
+		Employee[]arr=new Employee[5];
+		arr[0]=new Employee();
+		arr[1]=new Employee();
+		arr[2]=new Employee();
+		arr[3]=new Employee();
+		arr[4]=new Employee();
+		
+		
+		
+
+	}
+
+}

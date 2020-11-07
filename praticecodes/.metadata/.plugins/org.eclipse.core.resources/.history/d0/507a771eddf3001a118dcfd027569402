@@ -1,0 +1,17 @@
+package com.thread.test;
+
+public class Program 
+{
+
+	public static void main(String[] args) 
+	{
+		Thread thread=Thread.currentThread();
+		System.out.println(thread.toString());
+		boolean type=thread.isDaemon();
+		System.out.println("type :"+ (type ? "Daemon thread":"User thread"));
+		String state=thread.getState().name();
+		System.out.println("state :"+state);
+
+	}
+
+}

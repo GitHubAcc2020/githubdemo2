@@ -1,0 +1,22 @@
+package com.sunbeam.test;
+
+public class Employee 
+{
+	String name;
+	int empid;
+	float salary;
+	public Employee() 
+	{
+		
+	}
+	public Employee(String name, int empid, float salary) 
+	{
+		super();
+		this.name = name;
+		this.empid = empid;
+		this.salary = salary;
+	}
+	
+	
+
+}
